@@ -11,12 +11,7 @@ import { FeedbackModule } from './feedback/feedback.module';
     ConfigModule.forRoot({ isGlobal: true }),
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'user-prod-us-east-2-1.cluster-cfi5vnucvv3w.us-east-2.rds.amazonaws.com:5432',
-      port: 5432,
-      username: 'feedback-form-app-main-db-02261aaa19bc2764e',
-      password: 'ZxvVWzv8BdJXBpjcHt76Nw8y8e5svB',
-      database: 'feedback-form-app-main-db-02261aaa19bc2764e',
-      autoLoadEntities: true,
+      url: 'postgres://feedback-form-app-main-db-02261aaa19bc2764e:ZxvVWzv8BdJXBpjcHt76Nw8y8e5svB@user-prod-us-east-2-1.cluster-cfi5vnucvv3w.us-east-2.rds.amazonaws.com:5432/feedback-form-app-main-db-02261aaa19bc2764e',
     }),
   ],
   controllers: [AppController],
