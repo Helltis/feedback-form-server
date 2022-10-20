@@ -12,6 +12,7 @@ import { FeedbackModule } from './feedback/feedback.module';
     TypeOrmModule.forRoot({
       type: 'postgres',
       url: process.env.DATABASE_URL,
+      autoLoadEntities: true,
     }),
   ],
   controllers: [AppController],
