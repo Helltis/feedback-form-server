@@ -1,6 +1,6 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity('feedback_post')
+@Entity(process.env.PGDATABASE)
 export class FeedbackPostEntity {
   @PrimaryGeneratedColumn()
   id: number;
