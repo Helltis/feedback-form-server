@@ -11,12 +11,11 @@ import { FeedbackModule } from './feedback/feedback.module';
     ConfigModule.forRoot({ isGlobal: true }),
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'ec2-34-248-169-69.eu-west-1.compute.amazonaws.com',
+      host: 'user-prod-us-east-2-1.cluster-cfi5vnucvv3w.us-east-2.rds.amazonaws.com:5432',
       port: 5432,
-      username: 'fegbemiukdcyzy',
-      password:
-        '979a2b15e7e584fced9f26e1048c25beff66fff70e99c080ef36c9ce5cbc4407',
-      database: 'ddfv95datf03f0',
+      username: 'feedback-form-app-main-db-02261aaa19bc2764e',
+      password: 'ZxvVWzv8BdJXBpjcHt76Nw8y8e5svB',
+      database: 'feedback-form-app-main-db-02261aaa19bc2764e',
       autoLoadEntities: true,
     }),
   ],
